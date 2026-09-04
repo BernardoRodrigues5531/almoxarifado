@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Avaliação de almoxarifado</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin: 20px;
+      background-color: #f5f8ff;
+    }
+    #pagina2 {
+      display: none;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-top: 20px;
+      cursor: pointer;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+    form {
+      text-align: left;
+      max-width: 700px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h3 {
+      margin-top: 20px;
+    }
+    #resultado {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    #mensagemCertificado {
+      font-size: 20px;
+      color: green;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Página 1 -->
+  <div id="pagina1">
+    <h1>AVALIAÇÃO DE ALMOXARIFADO</h1>
+    <p>10 questões de múltipla escolha. Cada questão vale 1 ponto.<br>
+    Pontuação mínima para aprovação: <b>6,0</b>.<br>
+    Após finalizar, envie mensagem para o nosso WhatsApp para receber seu certificado.</p>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-t2rKLfgX_OP75e_abyHUOjTlvRPYCouvYVFc6FpS6CFW6R380nhGrtXn&s=10" alt="Imagem" width="300">
+    <br>
+    <button onclick="mostrarPagina2()">Iniciar Questionário</button>
+  </div>
+
+  <!-- Página 2 -->
+  <div id="pagina2">
+    <h1>Questionário de almoxarifado</h1>
+    <form id="quizForm">
+
+      <!-- Questão 1 -->
+<h3>1. Qual é a principal função do almoxarifado?</h3>
+<label><input type="radio" name="q1" value="a"> Produzir mercadorias.</label><br>
+<label><input type="radio" name="q1" value="b"> Armazenar, controlar e distribuir materiais.</label><br>
+<label><input type="radio" name="q1" value="c"> Vender produtos.</label><br>
+<label><input type="radio" name="q1" value="d"> Transportar funcionários.</label><br>
+
+<!-- Questão 2 -->
+<h3>2. O que é controle de estoque?</h3>
+<label><input type="radio" name="q2" value="a"> Organização e acompanhamento dos materiais armazenados.</label><br>
+<label><input type="radio" name="q2" value="b"> Limpeza do almoxarifado.</label><br>
+<label><input type="radio" name="q2" value="c"> Transporte de cargas.</label><br>
+<label><input type="radio" name="q2" value="d"> Compra de equipamentos.</label><br>
+
+<!-- Questão 3 -->
+<h3>3. O inventário serve para:</h3>
+<label><input type="radio" name="q3" value="a"> Contratar funcionários.</label><br>
+<label><input type="radio" name="q3" value="b"> Conferir a quantidade real dos materiais em estoque.</label><br>
+<label><input type="radio" name="q3" value="c"> Fazer vendas.</label><br>
+<label><input type="radio" name="q3" value="d"> Emitir notas fiscais.</label><br>
+
+<!-- Questão 4 -->
+<h3>4. O que significa FIFO?</h3>
+<label><input type="radio" name="q4" value="a"> Primeiro que entra, primeiro que sai.</label><br>
+<label><input type="radio" name="q4" value="b"> Último que entra, primeiro que sai.</label><br>
+<label><input type="radio" name="q4" value="c"> Controle de produção.</label><br>
+<label><input type="radio" name="q4" value="d"> Sistema de compras.</label><br>
+
+<!-- Questão 5 -->
+<h3>5. Qual documento é utilizado para registrar a entrada de materiais?</h3>
+<label><input type="radio" name="q5" value="a"> Nota fiscal.</label><br>
+<label><input type="radio" name="q5" value="b"> Currículo.</label><br>
+<label><input type="radio" name="q5" value="c"> Contrato de trabalho.</label><br>
+<label><input type="radio" name="q5" value="d"> Holerite.</label><br>
+
+<!-- Questão 6 -->
+<h3>6. Qual é a importância da organização do estoque?</h3>
+<label><input type="radio" name="q6" value="a"> Facilitar a localização e controle dos materiais.</label><br>
+<label><input type="radio" name="q6" value="b"> Aumentar o desperdício.</label><br>
+<label><input type="radio" name="q6" value="c"> Reduzir a segurança.</label><br>
+<label><input type="radio" name="q6" value="d"> Dificultar a movimentação.</label><br>
+
+<!-- Questão 7 -->
+<h3>7. O que é um estoque mínimo?</h3>
+<label><input type="radio" name="q7" value="a"> Quantidade máxima armazenada.</label><br>
+<label><input type="radio" name="q7" value="b"> Quantidade mínima necessária para evitar falta de material.</label><br>
+<label><input type="radio" name="q7" value="c"> Estoque vencido.</label><br>
+<label><input type="radio" name="q7" value="d"> Estoque descartado.</label><br>
+
+<!-- Questão 8 -->
+<h3>8. Qual equipamento pode ser utilizado para movimentação de materiais?</h3>
+<label><input type="radio" name="q8" value="a"> Empilhadeira.</label><br>
+<label><input type="radio" name="q8" value="b"> Impressora.</label><br>
+<label><input type="radio" name="q8" value="c"> Computador.</label><br>
+<label><input type="radio" name="q8" value="d"> Telefone.</label><br>
+
+<!-- Questão 9 -->
+<h3>9. O que deve ser feito ao identificar divergência no estoque?</h3>
+<label><input type="radio" name="q9" value="a"> Ignorar o problema.</label><br>
+<label><input type="radio" name="q9" value="b"> Registrar e investigar a causa da divergência.</label><br>
+<label><input type="radio" name="q9" value="c"> Excluir os registros.</label><br>
+<label><input type="radio" name="q9" value="d"> Continuar sem corrigir.</label><br>
+
+<!-- Questão 10 -->
+<h3>10. Qual é um dos objetivos do almoxarifado?</h3>
+<label><input type="radio" name="q10" value="a"> Garantir a disponibilidade dos materiais quando necessários.</label><br>
+<label><input type="radio" name="q10" value="b"> Produzir mercadorias.</label><br>
+<label><input type="radio" name="q10" value="c"> Realizar vendas.</label><br>
+<label><input type="radio" name="q10" value="d"> Fazer marketing.</label><br>
+      <button type="button" onclick="checkAnswers()">Enviar Respostas</button>
+    </form>
+
+    <p id="resultado"></p>
+    <p id="mensagemCertificado"></p>
+  </div>
+
+  <script>
+    // Mostrar a página de perguntas
+    function mostrarPagina2() {
+      document.getElementById('pagina1').style.display = 'none';
+      document.getElementById('pagina2').style.display = 'block';
+    }
+
+    // Verificar respostas
+    function checkAnswers() {
+      let total = 0;
+      const respostas = {
+  q1: 'b',
+  q2: 'a',
+  q3: 'b',
+  q4: 'a',
+  q5: 'a',
+  q6: 'a',
+  q7: 'b',
+  q8: 'a',
+  q9: 'b',
+  q10: 'a'
+};
+
+      for (let i = 1; i <= 10; i++) {
+        const q = document.querySelector('input[name="q'+i+'"]:checked');
+        if (q && q.value === respostas['q'+i]) total++;
+      }
+
+      document.getElementById('resultado').innerText = "Você acertou " + total + " de 10 perguntas.";
+
+      if (total >= 6) {
+        document.getElementById('mensagemCertificado').innerHTML =
+        "🎉 PARABÉNS! Envie mensagem para o nosso <a href='https://wa.me/5592984717426' target='_blank'>WhatsApp</a> para receber seu certificado.";
+      } else {
+        document.getElementById('mensagemCertificado').innerText = "Continue praticando! Tente novamente.";
+      }
+    }
+  </script>
+
+</body>
+</html>
